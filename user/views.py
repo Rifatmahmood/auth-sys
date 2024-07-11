@@ -16,7 +16,7 @@ def signup(request):
             # raw_password = form.cleaned_data.get('password1')
             # user = authenticate(username=username, password=raw_password)
             # login(request, user)
-            messages.success(request, "Logged In Successfully")
+            messages.success(request, "Signup Successfully")
             return redirect('login')
     else:
         form = RegisterForm()
